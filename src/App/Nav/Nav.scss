@@ -1,0 +1,78 @@
+.Nav { 
+    background: rgb(255, 255, 255); 
+    padding: 10px 80px; 
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .hamburger { 
+        display: block;
+        background-color: #ffffff;
+
+        width: 20px;
+        height: 20px;
+
+        position: absolute;
+        right: 26px;
+        top: 15px;
+        color:rgb(3, 13, 71);
+
+        svg {
+            width: 100%;
+            height: auto;
+
+            &:hover {
+                color: rgb(162, 202, 255);
+                cursor: pointer;
+            }
+        }
+    }
+    .logo {
+        width: 25%;
+        height:30px;
+    }
+    .links {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        a {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            display: block;
+            padding: 20px 0px 20px 35px;
+            border-radius: 0px;
+            margin: 0px;
+            text-decoration: none;
+            border: solid 0px rgb(64, 163, 255);
+
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                color: rgb(64, 163, 255);     
+                text-decoration: underline;    
+            }
+
+            &:focus {
+                background-color: rgb(255, 255, 255);
+                color: rgb(64, 163, 255);     
+                text-decoration: underline;    
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 710px) {
+    .Nav {
+        .links {
+            a {
+                display: inline-block;
+            }
+        }   
+        .hamburger { 
+                display: none;
+        }
+        
+    }
+}

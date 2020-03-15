@@ -1,0 +1,57 @@
+.Pages {
+    
+    padding : 0px;
+    margin: 0px auto;
+
+    .columns {
+
+        background-color: #ffffff;
+        padding: 50px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .col {
+            padding: 10px;
+            color: black;
+            font-size: 16px;
+            width: 100%;
+            text-align: left;
+            line-height: 27px;
+            margin: auto;
+        }
+
+        .col1 {background-color: rgb(255, 255, 255);}
+        .col2 {background-color: rgb(255, 255, 255);}
+        .col3 {background-color: rgb(250, 46, 80);}
+        .col4 {background-color: rgb(170, 0, 28);}
+
+        .title {font-size: 34px; margin-bottom: 20px;}
+
+
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+.Main{
+        .columns {
+            .col{
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 800px) {
+.Main{
+        .columns {
+            .col{
+                width: 44%;
+            }
+        }
+
+    }
+}
