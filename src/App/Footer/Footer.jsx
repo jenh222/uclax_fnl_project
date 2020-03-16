@@ -6,7 +6,7 @@ const Footer = () => {
         
         <footer className='Footer'>
             <div class="social-icons">
-                <a class="social-icon social-icon--facebook" href="#">
+                <a class="social-icon social-icon--facebook">
                     <i class="fa fa-facebook"></i>
                 </a>
                 <a class="social-icon social-icon--twitter" href="#">

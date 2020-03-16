@@ -7,23 +7,23 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = () => {
 
-    const [showMenu, updateShowMenu] = useState(false);
+    const [showMenu, updateShowMenu] = useState(true);
 
     //Click Event
     const handleHamburgerClick = () => {
-        if (showMenu === false) {
-            updateShowMenu(true);
-        } else {
+        if (showMenu === true) {
             updateShowMenu(false);
+        } else {
+            updateShowMenu(true);
         }
     }
 
     //Window Resize Event
     const handleWindowResize = () => {
-        if (window.innerWidth > 709) {
-            updateShowMenu(true);
-        } else {
+        if (window.innerWidth < 767) {
             updateShowMenu(false);
+        } else {
+            updateShowMenu(true);
         }
     }
 
