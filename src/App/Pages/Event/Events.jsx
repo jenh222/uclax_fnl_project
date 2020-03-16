@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-
 import Lightbox from '../../Lightbox/Lightbox.jsx';
 
 
@@ -25,7 +24,10 @@ const Event = (props) => {
             src= {props.eventCategory.image} 
             alt={props.eventCategory.title} 
             />
-            <h3>{ props.eventCategory.title }: Category:{ props.eventCategory.category }</h3>
+            <div>
+            <div><p>{ props.eventCategory.description }</p></div>
+            <h3>{ props.eventCategory.title }</h3> </div>
+            <div className="location">{ props.eventCategory.location }</div>
             <Lightbox 
             show={showLightBox} 
             turnLightOff={turnLightOff}

@@ -19,7 +19,7 @@ const Footer = () => {
                 <i class="fa fa-linkedin"></i>
                 </a>
             </div>
-            <div className="copyright">&copy;2020 Sed ut perspiciatis</div>
+            <div className="copyright">&copy;2020 LiveWell Health & Wellness</div>
         </footer>
     )
 };

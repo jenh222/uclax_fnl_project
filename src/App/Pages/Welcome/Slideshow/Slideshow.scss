@@ -1,4 +1,84 @@
 .Slideshow {
     background-color: yellow;
     color: black;
+
+    .carousel .slide .legend {
+        transition: all .5s ease-in-out;
+        position: absolute;
+        bottom: 50px;
+        left: 58%;
+        margin-left: -38%;
+        width: 60%;
+        height: 60%;
+        border-radius: 0px;
+        background: #f05637;
+        color: #fff;
+        padding: 100px 80px;
+        font-size: 54px;
+        text-align: center;
+        opacity: .8;
+        transition: opacity .35s ease-in-out;
+    }
+    
+}
+
+@media screen and (max-width: 1280px) {
+    .Slideshow {
+        .carousel .slide .legend {
+            font-size: 46px;
+            padding: 75px 60px 70px 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Slideshow {
+        .carousel .slide .legend {
+            padding: 60px 40px;
+            font-size: 38px;
+        }
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .Slideshow {
+        .carousel .slide .legend {
+            padding: 60px 40px;
+            font-size: 30px;
+            bottom: 20px;
+            left: 55%;
+            margin-left: -38%;
+            width: 65%;
+            height: 65%;
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .Slideshow {
+        .carousel .slide .legend {
+            padding: 35px 40px;
+            font-size: 30px;
+            bottom: -0px;
+            left: 52%;
+            margin-left: -38%;
+            width: 75%;
+            height: 70%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .Slideshow {
+        .carousel .slide .legend {
+            padding: 30px 40px;
+            font-size: 20px;
+            bottom: 20px;
+            left: 54%;
+            margin-left: -38%;
+            width: 70%;
+            height: 60%;
+        }
+    }
 }

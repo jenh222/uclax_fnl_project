@@ -1,21 +1,24 @@
 .Footer {
     background: rgba(0,0,0,.9);; 
-    padding: 50px 77px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 12px;
-    text-align: left;
+    padding: 30px 77px 30px 77px;
+    text-align: right;
     height: auto;
-    color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
-
-
 
 .social-icons {
     display: flex;
-    align-items: center;
-    justify-content: left;
-    padding-bottom:40px;
+    align-items: right;
   }
+
+.copyright {
+  font-size: 12px;
+  color: grey;
+  margin-top: 20px;
+}
 
   /* Color Variables */
 $color-twitter: #2b97f1;
@@ -27,11 +30,6 @@ $color-facebook: #3b5a9b;
 @mixin social-icon($color) {
   background: $color;
   color: #fff;
-}
-
-/* Social Icons */
-.social-icons {
-  display: flex;
 }
 
 .social-icon {

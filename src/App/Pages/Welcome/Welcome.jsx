@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Pages.scss';
 import Slideshow from  './Slideshow/Slideshow.jsx';
+import YoutubePlayer from './Youtube/Youtube.jsx';
 
 const Welcome = () => {
     return(
@@ -8,22 +9,24 @@ const Welcome = () => {
             <Slideshow />
             <div className="columns">
                 <div className="col col1">
-                    <div className="title">TITLE HERE</div>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci</p>
-                    <p>doloremque inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci</p>
+                    <div className="title">Who We Are</div>
+                    <p>LiveWell offers free health and wellness classes across Los Angeles County. Join a class to learn about nutrition, fitness, and lifestyle tips!</p>
+                    <p>Classes are free and open to the entire community. Visit a center today and experience the support, services and resources that can help you live your healthiest life.</p>
                 </div>
                 <div className="col col2">
                     <img src={("../img/about/about.jpg")} alt="Welcome" style={{ width: "100%", height: "100%" }}/>
                 </div>
             </div>
-            <div className="columns">
-            <div className="col col2">
-                <iframe title="7 Days of Slow Living" width="100%" height="330px" src="https://www.youtube.com/embed/y2PL4gNffBI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div className="columns2">
+                <div className="col col3">
+                    <div className="video-container">
+                    <YoutubePlayer />
+                    </div>
                 </div>
-                <div className="col col1">
+                <div className="col col4">
                     <div className="title">7 Days of Slow Living</div>
-                    <p>unt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci</p>
-                    <p>consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. magni dolores eos qui ratione voluptatem sequi ne Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci</p>
+                    <p>We all have the power to be more mindful, to allow ourselves to appreciate each and every moment by finding maximum joy in your day. </p>
+                    <p>If you're always busy but wish to experience your life a little more mindfully, this video might be a great start your day.</p>
                 </div>
             </div>
         </div>

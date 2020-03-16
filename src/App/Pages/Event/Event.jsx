@@ -5,7 +5,6 @@ import API from '../../common/API.js';
 import Categories from './Categories.jsx';
 import EventCategories from './EventCategories.jsx';
 import Tabbed from '../Welcome/Tabbed/Tabbed.jsx';
-import Slideshow from '../Welcome/Slideshow/Slideshow.jsx';
 //import Staff from '../Welcome/Staff/Staff.jsx';
 
 const Events = () => {
@@ -29,15 +28,17 @@ const Events = () => {
     
     return (
         <div className ='Event'>
-            <Slideshow />
-            <div className="title">Upcoming Events</div>
-            <div className="tabCategories">
-                <Categories 
-                    categories={ categories } 
-                    currCat={ currCat }
-                    setCurrCat= {setCurrCat }
-                />
+            <img src={("../img/services/service.jpg")} alt="Service" style={{ width: "100%", height: "100%" }}/>
+            <div className="title">March Events
+                <div className="tabCategories">
+                    <Categories 
+                        categories={ categories } 
+                        currCat={ currCat }
+                        setCurrCat= {setCurrCat }
+                    />
+                </div>
             </div>
+            
             <div className="container">
                 <EventCategories eventCategories={ eventCategories } currCat={ currCat }/>
             </div>

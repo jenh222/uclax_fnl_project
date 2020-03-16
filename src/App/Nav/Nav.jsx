@@ -20,7 +20,7 @@ const Nav = () => {
 
     //Window Resize Event
     const handleWindowResize = () => {
-        if (window.innerWidth < 767) {
+        if (window.innerWidth < 769) {
             updateShowMenu(false);
         } else {
             updateShowMenu(true);
@@ -35,7 +35,9 @@ const Nav = () => {
 
     return (
         <nav className='Nav'>
-            <div className="logo">LOGO HERE</div>
+            <div className="logo">
+                <img src={("../img/logo.svg")} alt="logo"/>
+            </div>
             <div className="hamburger" onClick={handleHamburgerClick} >
                     <FontAwesomeIcon icon={faBars}/>
             </div>

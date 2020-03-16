@@ -10,48 +10,127 @@
     padding: 0px 60px;
 }
 .tabCategories {
-    text-align: left;
-    padding: 0px 80px;
+    text-align: right;
+    width: 400px;
 }
 .tabbox {
     background-color: rgb(255, 255, 255);
-    padding: 80px;
-    //display: flex;
-    //flex-wrap: wrap;
-    //justify-content: space-between;
+    padding: 100px 80px 100px 80px;
+
 }
 
 .title {
     font-size: 34px; 
     text-align: left;
     color: black;
-    padding: 50px 80px 50px 80px;
+    padding: 100px 80px 50px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .EventCategory {
-    width: 300px;
+    width: 250px;
     margin: 20px;
+
     img {
         display: block;
-        width: 300px;
+        width: 250px;
     }
     h3 {
+        font-weight: 700;
+        margin: 0px;
+        padding-top: 5px;
+        color: rgb(87, 87, 87);
+        text-align: left;
+        font-size: 18px;
+    }
+    p {
         margin: 0px;
         background-color: white;
-        padding: 5px 10px;
-        color: black;
+        padding-top: 20px;
+        color: #f05637;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: left;
+        background-color: rgb(255, 255, 255);
+
+    }
+    .location {
+        margin: 0px;
+        background-color: white;
+        padding-top: 5px;
+        color: rgb(150, 150, 150);
+        font-size: 15px;
+        text-align: left;
+        background-color: rgb(255, 255, 255);
+
     }
 }
 
+
+
 button {
-    width: 200px;
-    background-color: teal;
+    width: auto;
+    background-color: rgb(255, 255, 255);
     line-height: 30px;
-    color: white;
+    color: rgb(150, 150, 150);
     font-size: 16px;
+    outline: none;
+    border-bottom: solid 4px rgb(255, 255, 255);
+    border-left: solid 1px rgb(255, 255, 255);
+    border-right: solid 1px rgb(255, 255, 255);
+    border-top: solid 1px rgb(255, 255, 255);
+    padding: 10px 12px 10px 12px;
+    font-weight: 600;
 
     &.active {
-        background-color: orange;
+        background-color: rgb(255, 255, 255);
+        border-bottom: solid 3px #f05637;
+        border-left: solid 1px rgb(255, 255, 255);
+        border-right: solid 1px rgb(255, 255, 255);
+        border-top: solid 1px rgb(255, 255, 255);
+        font-weight: 600;
+        color: #f05637;
+        outline: none;
     }
+}
+}
+
+@media screen and (max-width: 768px) {
+    .Event {
+        .EventCategory {
+            width: 160px;
+            margin: 15px;
+        
+            img {
+                display: block;
+                width: 170px;
+            }
+        }
+        .tabCategories {
+            padding-top: 10px;
+            text-align: left;
+            margin: 0;
+        }
+        .title {
+            padding: 50px 50px 20px 50px;
+            width: 100%;
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Event {
+        .EventCategory {
+            width: 150px;
+            margin: 10px;
+        
+            img {
+                display: block;
+                width: 150px;
+            }
+        }
     }
 }

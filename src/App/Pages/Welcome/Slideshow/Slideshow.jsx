@@ -52,7 +52,7 @@ const renderSlides = () => {
             <Carousel
                 showThumbs={ false }
                 showIndicators={ false }
-                autoPlay={ false }
+                autoPlay={ true }
                 infiniteLoop={ true }
                 showArrows={ true }
             >

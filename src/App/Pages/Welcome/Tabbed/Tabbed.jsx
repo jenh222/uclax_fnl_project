@@ -4,13 +4,12 @@ import { useState } from 'react';
 
 const tabItems = [
     {
-        image: '/img/about.jpg',
-        title: 'About',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+        title: 'Classes at LiveWell',
+        text: 'All classes are free and open to the entire community. Visit a center today and experience the support, services and resources that can help you live your healthiest life. Class schedules are updated daily and subject to change.',
     },
     {
-        title: 'Mission',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+        title: 'Questions regarding classes',
+        text: 'If you have questions directly related to wellness, call us at 123.456.7890.',
     },
 ];
 
@@ -19,14 +18,14 @@ const Tabbed = () => {
     //State managed
     const [currentTab, setCurrentTab] = useState(tabItems[0]);
 
-    const isAbout = (currentTab.title === 'About') ? 'tab active':'tab';
-    const isMission = (currentTab.title === 'Mission') ? 'tab active':'tab';
+    const isAbout = (currentTab.title === 'Classes at LiveWell') ? 'tab active':'tab';
+    const isContact = (currentTab.title === 'Questions regarding classes') ? 'tab active':'tab';
 
     return (
 <div className={ 'Tabbed' }>
         <div className ="tabs">
-            <div onClick={ () => {setCurrentTab(tabItems[0]) } }className={ isAbout }>Location</div>
-            <div onClick={ () => {setCurrentTab(tabItems[1]) } }className={ isMission }>Contact</div>
+            <div onClick={ () => {setCurrentTab(tabItems[0]) } }className={ isAbout }>About</div>
+            <div onClick={ () => {setCurrentTab(tabItems[1]) } }className={ isContact }>Contact</div>
         </div>
 
         <div className="content">
